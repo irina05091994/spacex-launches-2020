@@ -1,0 +1,114 @@
+.card {
+
+  box-shadow: var(--mantine-shadow-sm);
+  border: 1px solid var(--mantine-color-gray-2);
+  padding: var(--mantine-spacing-md);
+  min-height: 260px;
+  width: 100%;
+  border-radius: var(--mantine-radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+  animation: fadeIn 0.3s ease-out;
+  background-color: var(--mantine-color-body);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--mantine-shadow-md);
+}
+
+
+.imageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin-top: var(--mantine-spacing-lg);
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: var(--mantine-radius-full);
+  padding: var(--mantine-spacing-xs);
+}
+
+
+.titleGroup {
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: var(--mantine-fw-normal);
+  font-size: var(--mantine-font-size-lg);
+  text-align: center;
+  color: var(--mantine-color-black);
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: var(--mantine-spacing-lg);
+}
+
+
+.rocketName {
+  font-size: var(--mantine-font-size-sm);
+  color: var(--mantine-color-dimmed);
+  font-weight: var(--mantine-fw-normal);
+  text-align: center;
+  padding-bottom: var(--mantine-spacing-xs);
+}
+
+
+.seeMoreButton {
+  margin-top: auto;
+  margin-bottom: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+  background-color: var(--mantine-color-blue-7);
+  border: none;
+  color: var(--mantine-color-white);
+  width: auto;
+  min-width: 200px;
+  min-height: 35px;
+  padding: var(--mantine-spacing-sm) var(--mantine-spacing-md);
+  font-weight: var(--mantine-fw-500);
+  font-size: var(--mantine-font-size-sm);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--mantine-shadow-sm);
+}
+
+.seeMoreButton:hover {
+  background-color: var(--mantine-color-blue-8);
+  transform: translateY(-2px);
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.seeMoreButton:active {
+  transform: translateY(0);
+  box-shadow: var(--mantine-shadow-sm);
+}
+
+.seeMoreButton:focus-visible {
+  outline: 2px solid var(--mantine-color-blue-7);
+  outline-offset: 2px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
